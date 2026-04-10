@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BA / Software Engineer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <section class="hero" id="top">
+      <p><strong>Shahryar Ahmed</strong></p>
+      <p>Business Analyst / Software Engineer</p>
+      <p class="muted">Business-focused engineer with experience in requirements analysis, process improvement, and full-stack delivery.</p>
+    </section>
+
+    <section id="summary">
+      <h2>Professional Summary</h2>
+      <p>
+        Business Analyst and Software Engineer with experience across requirements gathering,
+        stakeholder communication, process improvement, system analysis, and full-stack
+        development. Known for translating business needs into practical, well-documented,
+        and clearly delivered technical solutions.
+      </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Business Analysis</h3>
+            <ul class="skills-list">
+              <li>Requirements Gathering</li>
+              <li>User Stories</li>
+              <li>Process Mapping</li>
+              <li>Stakeholder Communication</li>
+              <li>Acceptance Criteria</li>
+            </ul>
+          </div>
+  
+          <div>
+            <h3>Technical</h3>
+            <ul class="skills-list">
+              <li>JavaScript / TypeScript</li>
+              <li>HTML / CSS</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+  
+          <div>
+            <h3>Tools</h3>
+            <ul class="skills-list">
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>Git / GitHub</li>
+              <li>Figma</li>
+              <li>Excel / Reporting Tools</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="case-studies">
+        <h2>Projects & Case Studies</h2>
+      
+        <details class="job expandable">
+          <summary>
+            <div class="item-header">
+              <div class="item-header-main">
+                <img
+                  class="project-icon"
+                  src="./rfid_icon.jpg"
+                  alt="RFID technology icon"
+                />
+                <div class="work-entry-text">
+                  <div class="company-name">RFID-Enabled Cart Running and Shelf Placement Process for Medication Canisters</div>
+                  <div class="position-title">
+                  </div>
+                  <div class="location-line">Business Analysis Case Study</div>
+                </div>
+              </div>
+              <span class="item-meta">View Details</span>
+            </div>
+          </summary>
+      
+          <p class="summary-copy">
+            Workflow redesign and process analysis for medication canister handling and shelf placement.
+          </p>
+      
+          <div class="details-body">
+            <div class="project-links">
+                <ul>
+                    <li>
+                        Defined scope and business requirements for a proposed RFID-enabled medication canister stocking process to reduce manual barcode scanning.
+                    </li>
+                    <li>
+                        Analyzed cart running workflow bottlenecks and identified opportunities to improve high-volume replenishment efficiency through RFID automation.
+                    </li>
+                    <li>
+                        Developed future-state process design for automated bin/shelf-level tracking of medication canister placement.
+                    </li>
+                    <li>
+                        Conducted gap analysis comparing the current barcode-based process with a proposed RFID-based shelf tracking model.
+                    </li>
+                    <li>
+                        Documented requirements for improving placement accuracy, inventory traceability, and real-time visibility of canister location.
+                    </li>
+                </ul>
+            </div>
+      
+            <details class="pdf-viewer-toggle pdf-viewer-panel">
+              <summary>PDF Viewer</summary>
+              <div class="pdf-viewer-content">
+                <div class="pdf-controls">
+                  <input
+                    type="text"
+                    id="pdfPathInput"
+                    placeholder="Enter PDF file path"
+                  />
+                  <button class="case-study-button" id="loadPdfBtn">Load PDF</button>
+                </div>
+      
+                <div class="viewer-wrapper">
+                  <iframe
+                    id="pdfViewer"
+                    src=""
+                    title="BA Case Study PDF Viewer"
+                  ></iframe>
+                </div>
+      
+                <p class="muted" id="pdfStatus">No PDF selected.</p>
+              </div>
+            </details>
+          </div>
+        </details>
+      </section>
+
+    <section id="experience">
+      <h2>Work Experience</h2>
+
+      <details class="job expandable">
+        <summary>
+          <div class="item-header">
+            <div class="item-header-main">
+              <!-- <span class="company-icon" aria-hidden="true">C</span> -->
+              <img
+              class="company-icon"
+              src="./walgreens_logo.png"
+              alt="Walgreens logo"
+              />
+              <div class="work-entry-text">
+                <div class="company-name">Walgreen's</div>
+                <div class="position-title">Pharmacy Technician / Fullfillment Associate</div>
+                <div class="location-line">Bolingbrook, IL</div>
+              </div>
+            </div>
+            <span class="item-meta">Jan 2024 - Present</span>
+          </div>
+        </summary>
+        <p class="summary-copy">Delivered requirements, stakeholder alignment, process documentation, and software implementation support.</p>
+        <div class="details-body">
+          <ul>
+            <li>Gathered and documented business requirements for internal and client-facing applications.</li>
+            <li>Worked with stakeholders, developers, and QA teams to translate process needs into technical solutions.</li>
+            <li>Built or supported software features, integrations, and reporting tools.</li>
+            <li>Created workflows, user stories, acceptance criteria, and process documentation.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="job expandable">
+        <summary>
+          <div class="item-header">
+            <div class="item-header-main">
+              <!-- <span class="company-icon" aria-hidden="true">P</span> -->
+              <img
+              class="company-icon"
+              src="./handshake_logo.jpg"
+              alt="Handshake logo"
+              />
+              <div class="work-entry-text">
+                <div class="company-name">Handshake AI</div>
+                <div class="position-title">Data Annotator</div>
+                <div class="location-line">Remote</div>
+              </div>
+            </div>
+            <span class="item-meta">Nov 2025 - Present</span>
+          </div>
+        </summary>
+        <p class="summary-copy">Supported delivery through analysis, workflow improvement, and clear project documentation.</p>
+        <div class="details-body">
+          <ul>
+            <li>Supported project delivery through analysis, testing, and collaboration across teams.</li>
+            <li>Improved operational workflows and helped identify system enhancement opportunities.</li>
+            <li>Maintained documentation for project scope, requirements, and outcomes.</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="job expandable">
+        <summary>
+          <div class="item-header">
+            <div class="item-header-main">
+              <!-- <span class="company-icon" aria-hidden="true">P</span> -->
+              <img
+              class="company-icon"
+              src="./macys_logo.png"
+              alt="Macy's logo"
+              />
+              <div class="work-entry-text">
+                <div class="company-name">Macy's</div>
+                <div class="position-title">Sales Associate</div>
+                <div class="location-line">Schaumburg, IL</div>
+              </div>
+            </div>
+            <span class="item-meta">Nov 2021 - May 2022</span>
+          </div>
+        </summary>
+        <p class="summary-copy">Supported delivery through analysis, workflow improvement, and clear project documentation.</p>
+        <div class="details-body">
+          <ul>
+            <li>Supported project delivery through analysis, testing, and collaboration across teams.</li>
+            <li>Improved operational workflows and helped identify system enhancement opportunities.</li>
+            <li>Maintained documentation for project scope, requirements, and outcomes.</li>
+          </ul>
+        </div>
+      </details>
+
+    </section>
+
+    <!-- <section id="projects">
+      <h2>Projects</h2>
+
+      <details class="project expandable">
+        <summary>
+          <div class="item-header">
+            <div class="item-header-main">
+              <span class="project-icon" aria-hidden="true">IMG</span>
+              <h3>Project Name</h3>
+            </div>
+            <span class="item-meta">Tech Stack / Tools</span>
+          </div>
+        </summary>
+        <p class="summary-copy">Concise project snapshot covering the business need, solution delivered, and result.</p>
+        <div class="details-body">
+          <p>
+            Brief description of the project. Focus on the business problem, your role,
+            the solution you built, and the result.
+          </p>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">Live Demo</a>
+          </div>
+        </div>
+      </details>
+
+      <details class="project expandable">
+        <summary>
+          <div class="item-header">
+            <div class="item-header-main">
+              <span class="project-icon" aria-hidden="true">IMG</span>
+              <h3>Process Improvement / Analysis Project</h3>
+            </div>
+            <span class="item-meta">BA / Documentation / Workflow</span>
+          </div>
+        </summary>
+        <p class="summary-copy">Process-focused BA work centered on identifying gaps and proposing measurable improvements.</p>
+        <div class="details-body">
+          <p>
+            Add a project where you analyzed a business process, identified issues,
+            proposed changes, and documented the impact.
+          </p>
+        </div>
+      </details>
+    </section> -->
+
+    
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <div class="item-header">
+          <div class="item-header-main">
+            <!-- <span class="education-icon" aria-hidden="true">U</span> -->
+            <img
+            class="company-icon"
+            src="./uic_logo.png"
+            alt="University of Illinois at Chicago logo"
+            />
+            <div class="work-entry-text">
+              <div class="company-name">University of Illinois at Chicago</div>
+              <div class="position-title">Computer Science (conc. in Software Engineering)</div>
+              <div class="location-line">Chicago, IL</div>
+            </div>
+          </div>
+          <span class="item-meta">2021-2024</span>
+        </div>
+        <!-- <p class="item-meta">Concentration in Software Engineering</p> -->
+      </div>
+    </section>
+
+    <!-- <section id="certifications">
+      <h2>Certifications</h2>
+      <ul class="cert-list">
+        <li>Certification Name</li>
+        <li>Certification Name</li>
+      </ul>
+    </section> -->
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><strong>Email</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+        <li><strong>LinkedIn</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
+        <li><strong>GitHub</strong> <a href="#" target="_blank" rel="noopener">github.com/yourusername</a></li>
+        <li><strong>Portfolio</strong> <a href="#" target="_blank" rel="noopener">yourwebsite.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Shahryar Ahmed Portfolio</p>
+    </div>
+  </footer>
+
+  <script>
+    const pdfViewer = document.getElementById('pdfViewer');
+    const pdfStatus = document.getElementById('pdfStatus');
+    const pdfPathInput = document.getElementById('pdfPathInput');
+    const loadPdfBtn = document.getElementById('loadPdfBtn');
+    const caseStudyButtons = document.querySelectorAll('.case-study-button[data-pdf]');
+
+    function loadPdf(path) {
+      const cleanPath = path.trim();
+
+      if (!cleanPath) {
+        pdfViewer.src = '';
+        pdfStatus.textContent = 'No PDF selected.';
+        return;
+      }
+
+      pdfViewer.src = cleanPath;
+      pdfStatus.innerHTML = `Showing PDF: <strong>${cleanPath}</strong>`;
+    }
+
+    loadPdfBtn.addEventListener('click', () => {
+      loadPdf(pdfPathInput.value);
+    });
+
+    pdfPathInput.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') {
+        loadPdf(pdfPathInput.value);
+      }
+    });
+
+    caseStudyButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const pdfPath = button.getAttribute('data-pdf');
+        pdfPathInput.value = pdfPath;
+        loadPdf(pdfPath);
+      });
+    });
+  </script>
+</body>
+</html>
