@@ -11,16 +11,15 @@
     <section class="hero" id="top">
       <p><strong>Shahryar Ahmed</strong></p>
       <p>Business Analyst / Software Engineer</p>
-      <p class="muted">Business-focused engineer with experience in requirements analysis, process improvement, and full-stack delivery.</p>
+      <!-- <p class="muted">Business-focused engineer with experience in requirements analysis, process improvement, and full-stack delivery.</p> -->
     </section>
 
     <section id="summary">
       <h2>Professional Summary</h2>
       <p>
-        Business Analyst and Software Engineer with experience across requirements gathering,
-        stakeholder communication, process improvement, system analysis, and full-stack
-        development. Known for translating business needs into practical, well-documented,
-        and clearly delivered technical solutions.
+        Business Analyst and Software Engineer experienced in requirements gathering, 
+        stakeholder collaboration, process optimization, system analysis, and full-stack development. 
+        Skilled at turning business needs into clear, well-documented, and effective technical solutions.
       </p>
     </section>
 
@@ -41,6 +40,7 @@
           <div>
             <h3>Technical</h3>
             <ul class="skills-list">
+              <li>Python</li>
               <li>JavaScript / TypeScript</li>
               <li>HTML / CSS</li>
               <li>React</li>
@@ -63,7 +63,7 @@
       <section id="case-studies">
         <h2>Projects & Case Studies</h2>
       
-        <details class="job expandable">
+        <details class="job expandable" id="rfid-case-study">
           <summary>
             <div class="item-header">
               <div class="item-header-main">
@@ -107,10 +107,21 @@
                     </li>
                 </ul>
             </div>
+
+            <h4>PDF Viewer<h4>
+
+            <div class="viewer-wrapper">
+
+              <iframe
+                id="pdfViewer"
+                src=""
+                title="BA Case Study PDF Viewer"
+              ></iframe>
+            </div>
       
-            <details class="pdf-viewer-toggle pdf-viewer-panel">
-              <summary>PDF Viewer</summary>
-              <div class="pdf-viewer-content">
+            <!-- <details class="pdf-viewer-toggle pdf-viewer-panel"> -->
+              <!-- <summary>PDF Viewer</summary> -->
+              <!-- <div class="pdf-viewer-content">
                 <div class="pdf-controls">
                   <input
                     type="text"
@@ -120,17 +131,10 @@
                   <button class="case-study-button" id="loadPdfBtn">Load PDF</button>
                 </div>
       
-                <div class="viewer-wrapper">
-                  <iframe
-                    id="pdfViewer"
-                    src=""
-                    title="BA Case Study PDF Viewer"
-                  ></iframe>
-                </div>
       
                 <p class="muted" id="pdfStatus">No PDF selected.</p>
-              </div>
-            </details>
+              </div> -->
+            <!-- </details> -->
           </div>
         </details>
       </section>
@@ -229,55 +233,7 @@
       </details>
 
     </section>
-
-    <!-- <section id="projects">
-      <h2>Projects</h2>
-
-      <details class="project expandable">
-        <summary>
-          <div class="item-header">
-            <div class="item-header-main">
-              <span class="project-icon" aria-hidden="true">IMG</span>
-              <h3>Project Name</h3>
-            </div>
-            <span class="item-meta">Tech Stack / Tools</span>
-          </div>
-        </summary>
-        <p class="summary-copy">Concise project snapshot covering the business need, solution delivered, and result.</p>
-        <div class="details-body">
-          <p>
-            Brief description of the project. Focus on the business problem, your role,
-            the solution you built, and the result.
-          </p>
-          <div class="project-links">
-            <a href="#" target="_blank" rel="noopener">GitHub</a>
-            <a href="#" target="_blank" rel="noopener">Live Demo</a>
-          </div>
-        </div>
-      </details>
-
-      <details class="project expandable">
-        <summary>
-          <div class="item-header">
-            <div class="item-header-main">
-              <span class="project-icon" aria-hidden="true">IMG</span>
-              <h3>Process Improvement / Analysis Project</h3>
-            </div>
-            <span class="item-meta">BA / Documentation / Workflow</span>
-          </div>
-        </summary>
-        <p class="summary-copy">Process-focused BA work centered on identifying gaps and proposing measurable improvements.</p>
-        <div class="details-body">
-          <p>
-            Add a project where you analyzed a business process, identified issues,
-            proposed changes, and documented the impact.
-          </p>
-        </div>
-      </details>
-    </section> -->
-
     
-
     <section id="education">
       <h2>Education</h2>
 
@@ -302,21 +258,13 @@
       </div>
     </section>
 
-    <!-- <section id="certifications">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>Certification Name</li>
-        <li>Certification Name</li>
-      </ul>
-    </section> -->
-
     <section id="contact">
       <h2>Contact</h2>
       <ul class="contact-list">
-        <li><strong>Email</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li><strong>LinkedIn</strong> <a href="#" target="_blank" rel="noopener">linkedin.com/in/yourprofile</a></li>
-        <li><strong>GitHub</strong> <a href="#" target="_blank" rel="noopener">github.com/yourusername</a></li>
-        <li><strong>Portfolio</strong> <a href="#" target="_blank" rel="noopener">yourwebsite.com</a></li>
+        <li><strong>Email</strong> <a href="mailto:shahryarahmed3@gmail.com">shahryarahmed3@gmail.com</a></li>
+        <li><strong>LinkedIn</strong> <a href="https://www.linkedin.com/in/shahryara" target="_blank" rel="noopener">linkedin.com/in/shahryara</a></li>
+        <li><strong>GitHub</strong> <a href="https://www.github.com/shahryarahmed3" target="_blank" rel="noopener">github.com/shahryarahmed3</a></li>
+        <!-- <li><strong>Portfolio</strong> <a href="#" target="_blank" rel="noopener">yourwebsite.com</a></li> -->
       </ul>
     </section>
   </main>
@@ -347,23 +295,9 @@
       pdfStatus.innerHTML = `Showing PDF: <strong>${cleanPath}</strong>`;
     }
 
-    loadPdfBtn.addEventListener('click', () => {
-      loadPdf(pdfPathInput.value);
-    });
-
-    pdfPathInput.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter') {
-        loadPdf(pdfPathInput.value);
-      }
-    });
-
-    caseStudyButtons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const pdfPath = button.getAttribute('data-pdf');
-        pdfPathInput.value = pdfPath;
-        loadPdf(pdfPath);
-      });
-    });
+  window.addEventListener('DOMContentLoaded', () => {
+    loadPdf('Project_RFID_Enabled_Cart_Running.pdf');
+  });
   </script>
 </body>
 </html>
