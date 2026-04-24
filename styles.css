@@ -29,7 +29,7 @@ body {
   background-color: var(--bg);
   color: var(--text);
 
-  font-size: 0.935rem; /* 14px */
+  font-size: 1rem; /* 14px */
   line-height: 1.5;
 
   -webkit-font-smoothing: antialiased;
@@ -144,7 +144,7 @@ section h2 {
 
 .skills-grid h3 {
   margin-bottom: 4px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -161,7 +161,7 @@ section h2 {
   border-radius: 999px;
   background: var(--surface-soft);
   color: var(--text);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   line-height: 1.3;
   white-space: nowrap;
   transition: background-color 0.18s ease, border-color 0.18s ease;
@@ -221,7 +221,7 @@ section h2 {
 .muted,
 .expandable summary,
 .pdf-viewer-toggle summary {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
@@ -267,8 +267,8 @@ section h2 {
 .education-icon,
 .company-logo,
 .education-logo {
-  width: 36px;
-  height: 36px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
 }
 
